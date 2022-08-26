@@ -78,7 +78,7 @@ SOFTWARE.
 
 ---
 
-## author-info ℹ️
+## Author Info
 
 ### Created By Wissem Zidi <img src="https://github.com/Wissem-Zidi/styled-card/blob/main/page%20logo.jpg" alt="" height="30">
 
