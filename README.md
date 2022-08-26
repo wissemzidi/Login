@@ -2,7 +2,7 @@
 
 ## [Live-Server 👀](https://login-wissem.netlify.app/)
 
-<img src="./preview.png" alt="">
+<img src="./preview.jpg" alt="">
 
 ---
 
