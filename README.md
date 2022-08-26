@@ -32,7 +32,7 @@ This project is an input validation with a styling.
 
 ## How To Use 
 
-#### Installation
+#### Installation <img src="https://www.flaticon.com/free-icon/install_826093?term=install&page=1&position=33&page=1&position=33&related_id=826093&origin=search">
 
 #### API Reference
 
