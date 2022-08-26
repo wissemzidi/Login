@@ -30,7 +30,7 @@ This project is an input validation with a styling.
 
 ---
 
-## How To Use 📙
+## 📙 How To Use
 
 #### Installation
 
@@ -44,13 +44,13 @@ This project is an input validation with a styling.
 
 ---
 
-## References 📋
+## References
 
 [Back To The Top](#ReadMe)
 
 ---
 
-## License ©️
+## License
 
 MIT License
 
