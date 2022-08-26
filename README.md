@@ -52,7 +52,7 @@ This project is an input validation with a styling.
 
 ## License
 
-MIT License
+MIT License <img src="https://github.com/Wissem-Zidi/icons/blob/main/licence.svg" height="20" alt="">
 
 Copyright (c) 2022 Wissem
 
@@ -80,7 +80,7 @@ SOFTWARE.
 
 ## Author Info
 
-### Created By Wissem Zidi <img src="https://github.com/Wissem-Zidi/styled-card/blob/main/page%20logo.jpg" alt="" height="30">
+### Created By Wissem Zidi <img src="https://github.com/Wissem-Zidi/styled-card/blob/main/page%20logo.jpg" alt="" height="25">
 
 ### ✆ Want to contact Me?
 
