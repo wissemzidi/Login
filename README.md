@@ -1,4 +1,4 @@
-#ReadMe
+## ReadMe
 
 ## [Live-Server 👀](https://todo-wissem.netlify.app)
 
@@ -8,15 +8,15 @@
 
 ### Table of Contents 👋
 
-- [Description](#description)
-- [How To Use](#how-to-use)
+- [Description 📄](#description)
+- [How To Use 📙](#how-to-use)
 - [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
+- [License (c)](#license)
+- [Author Info ✆](#author-info)
 
 ---
 
-## Description 📄
+## Description 
 
 This project is an input validation with a styling.
 
@@ -30,7 +30,7 @@ This project is an input validation with a styling.
 
 ---
 
-## 📙 How To Use
+## How To Use 
 
 #### Installation
 
