@@ -10,17 +10,17 @@
 
 - [Description 📄](#description)
 - [How To Use 📙](#how-to-use)
-- [References](#references)
-- [License (c)](#license)
+- [References <img src="https://github.com/Wissem-Zidi/icons/blob/main/reference.svg" height="15" alt="">](#references)
+- [License <img src="https://github.com/Wissem-Zidi/icons/blob/main/licence.svg" height="15" alt="">](#license)
 - [Author Info ✆](#author-info)
 
 ---
 
-## Description 
+## Description
 
 This project is an input validation with a styling.
 
-#### Technologies 🛠️
+#### Technologies <img src="https://github.com/Wissem-Zidi/icons/blob/main/technologies.svg" alt="🛠️" height="20">
 
 - HTML 5
 - CSS 3
@@ -30,11 +30,11 @@ This project is an input validation with a styling.
 
 ---
 
-## How To Use 
+## How To Use
 
-#### Installation <img src="https://www.flaticon.com/free-icon/install_826093?term=install&page=1&position=33&page=1&position=33&related_id=826093&origin=search">
+#### Installation <img src="https://github.com/Wissem-Zidi/icons/blob/main/settings.svg" alt="" height="25">
 
-#### API Reference
+#### API Reference <img src="https://github.com/Wissem-Zidi/icons/blob/main/api.svg" alt="" height="25">
 
 ```html
 <p>dummy code</p>
@@ -54,7 +54,7 @@ This project is an input validation with a styling.
 
 MIT License
 
-Copyright (c) [2017]
+Copyright (c) 2022 Wissem
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
