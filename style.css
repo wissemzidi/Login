@@ -60,13 +60,13 @@ body {
 
 #return__btn {
   position: absolute;
-  top: .25rem;
-  left: .25rem;
+  top: 0.25rem;
+  left: 0.25rem;
   text-decoration: none;
   border-radius: 10px;
 }
 
-#return__btn img{
+#return__btn img {
   fill: red;
 }
 
@@ -121,10 +121,10 @@ body {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-2px);
+    transform: translateX(-4px);
   }
   50% {
-    transform: translateX(2px);
+    transform: translateX(4px);
   }
 }
 
