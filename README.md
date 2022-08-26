@@ -1,4 +1,4 @@
-## ReadMe
+# Read Me
 
 ## [Live-Server 👀](https://todo-wissem.netlify.app)
 
@@ -26,7 +26,7 @@ This project is an input validation with a styling.
 - CSS 3
 - Java Script
 
-[Back To The Top](#ReadMe)
+[Back To The Top](#read-me)
 
 ---
 
@@ -40,13 +40,13 @@ This project is an input validation with a styling.
 <p>dummy code</p>
 ```
 
-[Back To The Top](#ReadMe)
+[Back To The Top](#read-me)
 
 ---
 
 ## References
 
-[Back To The Top](#ReadMe)
+[Back To The Top](#read-me)
 
 ---
 
@@ -74,7 +74,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#ReadMe)
+[Back To The Top](#read-me)
 
 ---
 
@@ -91,6 +91,6 @@ SOFTWARE.
 - [Github](https://github.com/Wissem-Zidi/)
 - [Whats App](https://wa.me/25561960?text=)
 
-[Back To The Top](#ReadMe)
+[Back To The Top](#read-me)
 
 **Have a nice day!** 🚀
