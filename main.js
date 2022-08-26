@@ -4,7 +4,7 @@ const passwordInput = document.querySelector("#password__input");
 const submitBtn = document.querySelector("#login__submit__btn");
 const specialCharacters = "&#|/)([]{}=+.,:/!§*µ$£!;?-_~²`";
 
-emailInput.addEventListener("keypress", () => {
+emailInput.addEventListener("keydown", () => {
   if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
     emailInput.className = "invalid";
   } else {
@@ -12,7 +12,7 @@ emailInput.addEventListener("keypress", () => {
   }
 });
 
-passwordInput.addEventListener("keypress", () => {
+passwordInput.addEventListener("keydown", () => {
   if (passwordInput.value.length >= 6) {
     passwordInput.className = "valid";
   } else {
