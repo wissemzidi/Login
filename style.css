@@ -1,1 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+*,
+*::before,
+*::after {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-primary-900: rgb(15, 15, 15);
+  --clr-primary-800: rgb(30, 30, 30);
+  --clr-primary-700: rgb(5, 255, 5);
+  --clr-primary-600: rgb(255, 0, 0);
+  --clr-primary-500: #3a6ea5;
+  --clr-primary-300: #ebebeb;
+  --clr-primary-200: rgb(240, 240, 240);
+  --clr-primary-100: rgb(250, 250, 250);
+
+  --clr-neutral-100: 24, 100%, 50%;
+  --clr-neutral-200: #3499ff;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--clr-primary-100);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#page {
+  width: min(100vw, 40rem);
+  min-height: 100vh;
+  background-color: var(--clr-primary-100);
+}
+
+#login__header {
+  color: var(--clr-primary-600);
+  font-weight: 500;
+  margin: 4vh 0;
+}
+
+#login {
+  position: relative;
+  min-height: 50vh;
+  margin: 10vh 0.5rem;
+  padding: 1rem;
+  background-color: var(--clr-primary-200);
+  border-radius: 10px;
+}
+
+#return__btn {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#return__btn img{
+  fill: red;
+}
+
+#login__input {
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+}
+
+#login__input__container {
+  /* background-color: gray; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#login__input__container label {
+  padding: 0.5rem 0.2rem;
+  color: var(--clr-primary-500);
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+#login__input__container input {
+  position: relative;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px -5px black;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1.5px solid transparent;
+  outline: none;
+  transition: 0.4s border ease-out;
+}
+
+#login__input__container input:where(:hover, :focus-visible) {
+  border-bottom: 1.5px solid var(--clr-primary-500);
+}
+
+.invalid {
+  border-bottom: 1.5px solid var(--clr-primary-600) !important;
+}
+
+.valid {
+  border-bottom: 1.5px solid var(--clr-primary-700) !important;
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+#input__conditions {
+  font-weight: 300;
+  color: var(--clr-primary-800);
+  font-size: 0.8rem;
+  letter-spacing: -0.5px;
+}
+
+#login__submit {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#login__submit button {
+  position: relative;
+  width: 90%;
+  height: 3.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid hsl(var(--clr-neutral-100));
+  transition: 0.35s background-color ease-out;
+  transition: 0.3s background-color, color ease-out;
+  isolation: isolate;
+}
+
+#login__submit button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10%;
+  height: 100%;
+  background-color: hsl(var(--clr-neutral-100));
+  border-radius: 0 10px 10px 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s width ease-out, 0.3s opacity ease-out;
+}
+
+#login__submit button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 10%;
+  height: 100%;
+  background-color: hsl(var(--clr-neutral-100));
+  border-radius: 10px 0 0 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s width ease-out, 0.3s opacity ease-out;
+}
+
+#login__submit button:where(:hover, :focus-visible)::before,
+#login__submit button:where(:hover, :focus-visible)::after {
+  opacity: 1;
+  width: 50%;
+}
+
+#login__submit button:where(:hover, :focus-visible) {
+  color: white;
+}
