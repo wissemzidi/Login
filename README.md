@@ -84,7 +84,7 @@ SOFTWARE.
 
 ### ✆ Want to contact Me?
 
-- [Website](https://wissem-zidi-ofc.netlify.com)
+- [Website](https://wissem-zidi-ofc.netlify.app)
 - [Email](https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=wissem.zidi.ofc@gmail.com)
 - [Github](https://github.com/Wissem-Zidi/)
 
