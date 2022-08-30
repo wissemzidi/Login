@@ -84,12 +84,9 @@ SOFTWARE.
 
 ### ✆ Want to contact Me?
 
-- [Facebook](https://www.facebook.com/wissem.zidi.ofc/)
-- [Messenger](https://msng.link/o/?wissem.zidi.ofc=fm)
+- [Website](https://wissem-zidi-ofc.netlify.com)
 - [Email](https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=wissem.zidi.ofc@gmail.com)
-- [Stack Overflow](https://stackoverflow.com/users/19135958/wissem)
 - [Github](https://github.com/Wissem-Zidi/)
-- [Whats App](https://wa.me/25561960?text=)
 
 [Back To The Top](#read-me)
 
