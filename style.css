@@ -144,7 +144,7 @@ body {
   justify-content: center;
 }
 
-#login__submit button {
+#login__submit__btn {
   position: relative;
   width: 90%;
   height: 3.5rem;
@@ -160,7 +160,7 @@ body {
   isolation: isolate;
 }
 
-#login__submit button::before {
+#login__submit__btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -174,7 +174,7 @@ body {
   transition: 0.3s width ease-out, 0.3s opacity ease-out;
 }
 
-#login__submit button::after {
+#login__submit__btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -188,12 +188,22 @@ body {
   transition: 0.3s width ease-out, 0.3s opacity ease-out;
 }
 
-#login__submit button:where(:hover, :focus-visible)::before,
-#login__submit button:where(:hover, :focus-visible)::after {
+#login__submit__btn:where(:hover, :focus-visible)::before,
+#login__submit__btn:where(:hover, :focus-visible)::after {
   opacity: 1;
   width: 50%;
 }
 
-#login__submit button:where(:hover, :focus-visible) {
+#login__submit__btn:where(:hover, :focus-visible) {
   color: white;
+}
+
+.allValid:where(:hover, :focus-visible)::before,
+.allValid:where(:hover, :focus-visible)::after {
+  opacity: 1 !important;
+  width: 50% !important;
+}
+
+.allValid:where(:hover, :focus-visible) {
+  color: white !important;
 }

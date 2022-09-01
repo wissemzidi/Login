@@ -1,7 +1,26 @@
 // const
 const emailInput = document.querySelector("#email__input");
 const passwordInput = document.querySelector("#password__input");
+const inputs = [emailInput, passwordInput];
 const submitBtn = document.querySelector("#login__submit__btn");
+
+inputs.forEach((e) => {
+  e.addEventListener("keydown", () => {
+    if (
+      emailInput.classList.contains("valid") &&
+      passwordInput.classList.contains("valid")
+    ) {
+      console.log("allValid");
+      submitBtn.classList.add("allValid");
+      submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
+      submitBtn.style.color = "white";
+    } else {
+      submitBtn.classList.remove("allValid");
+      submitBtn.style.backgroundColor = "transparent";
+      submitBtn.style.color = "black";
+    }
+  });
+});
 
 emailInput.addEventListener("keyup", () => {
   if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
@@ -12,7 +31,7 @@ emailInput.addEventListener("keyup", () => {
 });
 
 passwordInput.addEventListener("keyup", () => {
-  if (passwordInput.value.length >= 6) {
+  if (passwordInput.value.length > 5) {
     passwordInput.className = "valid";
   } else {
     passwordInput.className = "invalid";
