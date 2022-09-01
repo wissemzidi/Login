@@ -4,22 +4,43 @@ const passwordInput = document.querySelector("#password__input");
 const inputs = [emailInput, passwordInput];
 const submitBtn = document.querySelector("#login__submit__btn");
 
-inputs.forEach((e) => {
-  e.addEventListener("keydown", () => {
-    if (
-      emailInput.classList.contains("valid") &&
-      passwordInput.classList.contains("valid")
-    ) {
-      console.log("allValid");
-      submitBtn.classList.add("allValid");
-      submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
-      submitBtn.style.color = "white";
-    } else {
-      submitBtn.classList.remove("allValid");
-      submitBtn.style.backgroundColor = "transparent";
-      submitBtn.style.color = "black";
-    }
-  });
+// inputs.forEach((e) => {
+//   e.addEventListener("keydown", () => {
+//     if (
+//       emailInput.classList.contains("valid") &&
+//       passwordInput.classList.contains("valid")
+//     ) {
+//       console.log("allValid");
+//       submitBtn.classList.add("allValid");
+//       submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
+//       submitBtn.style.color = "white";
+//     } else {
+//       submitBtn.classList.remove("allValid");
+//       submitBtn.style.backgroundColor = "transparent";
+//       submitBtn.style.color = "black";
+//     }
+//   });
+// });
+
+window.addEventListener("keyup", () => {
+  if (
+    emailInput.classList.contains("valid") &&
+    passwordInput.classList.contains("valid")
+  ) {
+    console.log("allValid");
+    submitBtn.classList.add("allValid");
+    submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
+    submitBtn.style.color = "white";
+    submitBtn.style.opacity = "1";
+  } else if (
+    emailInput.classList.contains("invalid") ||
+    passwordInput.classList.contains("invalid")
+  ) {
+    submitBtn.classList.remove("allValid");
+    submitBtn.style.backgroundColor = "transparent";
+    submitBtn.style.color = "red";
+    submitBtn.style.opacity = ".6";
+  }
 });
 
 emailInput.addEventListener("keyup", () => {

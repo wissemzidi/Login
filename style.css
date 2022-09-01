@@ -155,6 +155,7 @@ body {
   border-radius: 10px;
   border: none;
   outline: 1px solid hsl(var(--clr-neutral-100));
+  opacity: 0.8;
   transition: 0.35s background-color ease-out;
   transition: 0.3s background-color, color ease-out;
   isolation: isolate;
@@ -167,7 +168,7 @@ body {
   left: 50%;
   width: 10%;
   height: 100%;
-  background-color: hsl(var(--clr-neutral-100));
+  background-color: hsl(var(--clr-neutral-100), 0.2);
   border-radius: 0 10px 10px 0;
   opacity: 0;
   z-index: -1;
@@ -181,7 +182,7 @@ body {
   right: 50%;
   width: 10%;
   height: 100%;
-  background-color: hsl(var(--clr-neutral-100));
+  background-color: hsl(var(--clr-neutral-100), 0.2);
   border-radius: 10px 0 0 10px;
   opacity: 0;
   z-index: -1;
@@ -196,14 +197,4 @@ body {
 
 #login__submit__btn:where(:hover, :focus-visible) {
   color: white;
-}
-
-.allValid:where(:hover, :focus-visible)::before,
-.allValid:where(:hover, :focus-visible)::after {
-  opacity: 1 !important;
-  width: 50% !important;
-}
-
-.allValid:where(:hover, :focus-visible) {
-  color: white !important;
 }
