@@ -32,11 +32,61 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--clr-primary-100);
   width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.bg.active {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.08);
+  z-index: 80;
+  backdrop-filter: blur(0.7px);
+  transition: all ease-out 0.2s;
+}
+
+.spinner.active {
+  position: absolute;
+  top: 45%;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+  z-index: 90;
+}
+
+.spinner.active::before,
+.spinner.active::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner.active::before {
+  border-color: var(--clr-primary-500) #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner.active::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 #page {

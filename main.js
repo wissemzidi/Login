@@ -35,9 +35,14 @@ window.addEventListener("keyup", () => {
     submitBtn.style.opacity = ".8";
     submitBtn.style.cursor = "auto";
     submitBtn.addEventListener("click", function () {
-      // setTimeout(function () {
-      //   window.location.href = "https://www.google.com";
-      // }, 1000);
+      activateSpinner();
+      document.querySelector(".bg").classList.add("active");
+      setTimeout(function () {
+        // window.location.href = "https://www.google.com";
+        document.querySelector("body").innerHTML = `
+        <center><h2> wtf-bro </h2></center>
+        `;
+      }, 3000);
     });
   }
 });
@@ -114,4 +119,8 @@ function is_emailValid() {
   if (regex.test(emailInput.value)) {
     emailInput.className = "valid";
   }
+}
+
+function activateSpinner() {
+  document.querySelector(".spinner").classList.add("active");
 }
