@@ -158,6 +158,7 @@ body {
   background-color: transparent;
   outline: 1px solid hsl(var(--clr-neutral-100), 80%);
   opacity: 0.8;
+  cursor: pointer;
   transition: 0.35s background-color ease-out;
   transition: 0.3s background-color, color ease-out;
   isolation: isolate;
