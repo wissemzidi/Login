@@ -12,14 +12,20 @@
   <body>
     <section id="page">
       <center><h2 id="login__header">Login</h2></center>
-      <form id="login">
+      <form id="login" onsubmit="return false">
         <a href="https://tunisianet.netlify.app/" id="return__btn">
-          <img height="20" src="./icons/return.svg" alt="<" />
+          <img height="20" src="./icons/return.svg" alt=">" />
         </a>
         <div id="login__input">
           <div id="login__input__container">
             <label for="email__input" id="email__label">Email</label>
-            <input id="email__input" class="" title="Email" type="email" />
+            <input
+              id="email__input"
+              class=""
+              title="Email"
+              type="email"
+              autocomplete="off"
+            />
           </div>
           <div id="login__input__container">
             <label for="password__input" id="password__label">Password</label>
@@ -28,8 +34,9 @@
               id="password__input"
               class=""
               type="password"
+              autocomplete="off"
             />
-            <span id="input__conditions">Minimum 6 characters</span>
+            <span id="input__conditions">Minimum 8 characters</span>
           </div>
         </div>
         <div id="login__submit">

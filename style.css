@@ -14,7 +14,7 @@
   --clr-primary-900: rgb(15, 15, 15);
   --clr-primary-800: rgb(30, 30, 30);
   --clr-primary-700: rgb(5, 255, 5);
-  --clr-primary-600: rgb(255, 0, 0);
+  --clr-primary-600: #ff1000;
   --clr-primary-500: #3a6ea5;
   --clr-primary-300: #ebebeb;
   --clr-primary-200: rgb(240, 240, 240);
@@ -22,6 +22,8 @@
 
   --clr-neutral-100: 24, 100%, 50%;
   --clr-neutral-200: #3499ff;
+  --clr-hsl-blue: 210, 100%, 60%;
+  --clr-hsl-red: 0, 100%, 50%;
 }
 
 html {
@@ -150,51 +152,17 @@ body {
   height: 3.5rem;
   font-weight: 400;
   font-size: 1.2rem;
-  text-align: center;
-  background-color: transparent;
+  color: hsl(var(--clr-hsl-red), 0.8);
   border-radius: 10px;
   border: none;
-  outline: 1px solid hsl(var(--clr-neutral-100));
+  background-color: transparent;
+  outline: 1px solid hsl(var(--clr-neutral-100), 80%);
   opacity: 0.8;
   transition: 0.35s background-color ease-out;
   transition: 0.3s background-color, color ease-out;
   isolation: isolate;
 }
 
-#login__submit__btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 10%;
-  height: 100%;
-  background-color: hsl(var(--clr-neutral-100), 0.2);
-  border-radius: 0 10px 10px 0;
-  opacity: 0;
-  z-index: -1;
-  transition: 0.3s width ease-out, 0.3s opacity ease-out;
-}
-
-#login__submit__btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 50%;
-  width: 10%;
-  height: 100%;
-  background-color: hsl(var(--clr-neutral-100), 0.2);
-  border-radius: 10px 0 0 10px;
-  opacity: 0;
-  z-index: -1;
-  transition: 0.3s width ease-out, 0.3s opacity ease-out;
-}
-
-#login__submit__btn:where(:hover, :focus-visible)::before,
-#login__submit__btn:where(:hover, :focus-visible)::after {
-  opacity: 1;
-  width: 50%;
-}
-
-#login__submit__btn:where(:hover, :focus-visible) {
-  color: white;
+#login__submit__btn:hover {
+  background-color: hsl(var(--clr-hsl-blue), 5%);
 }

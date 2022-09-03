@@ -1,58 +1,67 @@
-// const
+// "use strict";
+
+// Const
 const emailInput = document.querySelector("#email__input");
 const passwordInput = document.querySelector("#password__input");
-const inputs = [emailInput, passwordInput];
 const submitBtn = document.querySelector("#login__submit__btn");
+const form = document.querySelector("#login");
+const regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-z]+)$/;
 
-// inputs.forEach((e) => {
-//   e.addEventListener("keydown", () => {
-//     if (
-//       emailInput.classList.contains("valid") &&
-//       passwordInput.classList.contains("valid")
-//     ) {
-//       console.log("allValid");
-//       submitBtn.classList.add("allValid");
-//       submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
-//       submitBtn.style.color = "white";
-//     } else {
-//       submitBtn.classList.remove("allValid");
-//       submitBtn.style.backgroundColor = "transparent";
-//       submitBtn.style.color = "black";
-//     }
-//   });
-// });
+// On screen load
+is_emailValid();
+
+// Events listener
+emailInput.addEventListener("input", function () {
+  is_emailValid();
+});
 
 window.addEventListener("keyup", () => {
   if (
     emailInput.classList.contains("valid") &&
     passwordInput.classList.contains("valid")
   ) {
-    console.log("allValid");
     submitBtn.classList.add("allValid");
     submitBtn.style.backgroundColor = "hsl(var(--clr-neutral-100))";
     submitBtn.style.color = "white";
     submitBtn.style.opacity = "1";
+    submitBtn.style.cursor = "pointer";
   } else if (
     emailInput.classList.contains("invalid") ||
     passwordInput.classList.contains("invalid")
   ) {
     submitBtn.classList.remove("allValid");
     submitBtn.style.backgroundColor = "transparent";
-    submitBtn.style.color = "red";
-    submitBtn.style.opacity = ".6";
+    submitBtn.style.color = "hsl(var(--clr-hsl-red), 0.8)";
+    submitBtn.style.opacity = ".8";
+    submitBtn.style.cursor = "auto";
+    submitBtn.addEventListener("click", function () {
+      // setTimeout(function () {
+      //   window.location.href = "https://www.google.com";
+      // }, 1000);
+    });
   }
 });
 
-emailInput.addEventListener("keyup", () => {
-  if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
-    emailInput.className = "invalid";
-  } else {
+emailInput.addEventListener("keyup", function () {
+  if (ValidateEmail(emailInput.value)) {
     emailInput.className = "valid";
+  } else {
+    emailInput.className = "invalid";
   }
 });
+
+function ValidateEmail(mailContent) {
+  if (regex.test(mailContent)) {
+    console.log("good");
+    return true;
+  } else {
+    console.log("bad");
+    return false;
+  }
+}
 
 passwordInput.addEventListener("keyup", () => {
-  if (passwordInput.value.length > 5) {
+  if (passwordInput.value.length >= 8) {
     passwordInput.className = "valid";
   } else {
     passwordInput.className = "invalid";
@@ -79,7 +88,7 @@ submitBtn.addEventListener("click", () => {
   } else {
     emailInput.className = "valid";
   }
-  if (passwordInput.value.length >= 6) {
+  if (passwordInput.value.length >= 8) {
     passwordInput.className = "valid";
   } else {
     passwordInput.className = "invalid";
@@ -99,3 +108,10 @@ submitBtn.addEventListener("click", () => {
     }, 2000);
   }
 });
+
+// Functions
+function is_emailValid() {
+  if (regex.test(emailInput.value)) {
+    emailInput.className = "valid";
+  }
+}
